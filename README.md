@@ -27,7 +27,7 @@ Three full-body sessions, each about 45–55 min including warm-up and cool-down
 - **Effort:** stop each set 1–2 reps short of failure. When you hit the top of the rep range on every set, add weight next session.
 - **Zone 2** means an easy, steady pace at about 60–70 % of max heart rate (max HR ≈ 220 − age). You can breathe through your nose and talk in full sentences. It builds your aerobic base without hurting recovery.
 
-**Warm-up and cool-down** are written for each day. The warm-up prepares that day's main lifts with mobility drills and ramp-up sets. The cool-down stretches the muscles just trained.
+**Warm-up and cool-down** are written for each day. The warm-up prepares that day's main lifts: one movement per step, each drill with a short demo video, then ramp-up sets. The cool-down stretches the muscles just trained.
 
 ## Nutrition
 

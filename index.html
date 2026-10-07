@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Recomp · Phase 1</title>
 <meta name="description" content="3-day strength split plus Zone 2 cardio, rest timer, whole-food meal plan and shopping list.">
-<meta name="theme-color" content="#E9EDF1" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#12171D" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ECEFF3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1419" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="manifest" href="manifest.webmanifest">
@@ -17,10 +17,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F2F4F7; --surface:#FFFFFF; --sunk:#EEF1F5; --ink:#141B24; --muted:#667382; --line:#E1E6EC;
+  --bg:#ECEFF3; --surface:#FFFFFF; --sunk:#EEF1F5; --ink:#141B24; --muted:#5F6B79; --line:#E3E8EE;
   --red:#C8102E; --blue:#1D4E9E; --yellow:#E8B10A; --green:#1F7A4D; --grey:#8A939D;
   --accent:var(--blue); --on-accent:#fff;
-  --shadow:0 1px 2px rgba(20,27,36,.05),0 4px 16px rgba(20,27,36,.05);
+  --shadow:0 1px 2px rgba(20,27,36,.06),0 6px 20px rgba(20,27,36,.06);
   --r:16px; --r-sm:10px;
   --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
   --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -67,7 +67,7 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.05;margin:0
 .hero h2 .bar{display:inline-block;width:.3em;height:.7em;background:var(--accent);margin-right:.2em;border-radius:2px}
 .meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.92rem;color:var(--muted)}
 .meta b{color:var(--ink);font-weight:600}
-.progress{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin:14px 0 0}
+.progress{height:6px;background:color-mix(in srgb,var(--ink) 9%,transparent);border-radius:6px;overflow:hidden;margin:14px 0 0}
 .progress i{display:block;height:100%;background:var(--accent);width:0;border-radius:6px;transition:width .3s ease}
 .tip{font-size:.85rem;color:var(--muted);margin:12px 0 0;text-align:center}
 
@@ -86,6 +86,12 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.05;margin:0
 .check[aria-pressed="true"] .box::after{content:"";width:5px;height:10px;border:solid var(--on-accent);border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px)}
 .check[aria-pressed="true"] .txt{color:var(--muted)}
 .check[aria-pressed="true"] .txt b{text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--muted) 60%,transparent)}
+.steps .row{display:flex;align-items:center}
+.steps .row .check{flex:1}
+.vplay{flex:none;width:36px;height:36px;margin-right:12px;border-radius:50%;border:0;background:var(--sunk);box-shadow:inset 0 0 0 1px var(--line);color:var(--accent);font-size:.75rem;padding-left:2px}
+.vplay[aria-expanded="true"]{background:var(--accent);color:var(--on-accent);box-shadow:none}
+.steps .slot:not(:empty){padding:0 16px 14px}
+.steps .player{margin-top:0}
 .txt b{font-weight:600}
 .txt small{display:block;color:var(--muted);font-size:.84rem}
 
@@ -99,14 +105,14 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.05;margin:0
 .dose{font-size:.9rem;color:var(--muted);margin-top:2px}
 .dose b{font-family:var(--display);font-size:1.05rem;font-weight:600;color:var(--ink)}
 .kg{display:flex;align-items:baseline;gap:4px;font-size:.8rem;color:var(--muted)}
-.kg input{width:58px;padding:8px 6px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--sunk);color:var(--ink);font:600 1rem var(--body);text-align:center}
+.kg input{width:58px;padding:8px 6px;border:1px solid color-mix(in srgb,var(--ink) 12%,transparent);border-radius:var(--r-sm);background:var(--sunk);color:var(--ink);font:600 1rem var(--body);text-align:center}
 .kg input:focus{outline:none;border-color:var(--accent)}
 .cue{margin:12px 0 0;font-size:.92rem;color:var(--muted)}
 .sets{display:grid;grid-template-columns:repeat(auto-fit,minmax(56px,1fr));gap:8px;margin-top:14px}
-.set{min-height:52px;padding:8px 6px;border-radius:var(--r-sm);border:0;background:var(--sunk);font-family:var(--display);font-size:1.1rem;font-weight:600;line-height:1;transition:background .15s,transform .1s}
+.set{min-height:52px;padding:8px 6px;border-radius:var(--r-sm);border:0;background:var(--sunk);box-shadow:inset 0 0 0 1px var(--line);font-family:var(--display);font-size:1.1rem;font-weight:600;line-height:1;transition:background .15s,transform .1s}
 .set:active{transform:scale(.96)}
 .set small{display:block;font-family:var(--body);font-size:.7rem;font-weight:500;color:var(--muted);margin-top:4px}
-.set[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+.set[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);box-shadow:none}
 .set[aria-pressed="true"] small{color:inherit;opacity:.8}
 .more{margin-top:12px}
 .more summary{list-style:none;cursor:pointer;font-size:.85rem;color:var(--muted);font-weight:500;padding:4px 0}
@@ -245,24 +251,36 @@ const EX = {
     gear:"Bike, rower or incline treadmill",swap:"Outdoor ride or brisk hill walk"},
 };
 
-/* Warm-ups prime the day's main lifts; cool-downs stretch what was just trained. */
+/* Warm-ups prime the day's main lifts; cool-downs stretch what was just trained.
+   One movement per step; third item = short demo video. */
+const WV = {
+  wgs:V("-CiWQ2IvY34","Squat University","0:43"),
+  squat:V("P-yaD24bUE8","Runna","0:47"),
+  pullapart:V("bYsgk9SrJ48","Hinge Health","1:12"),
+  bridge:V("L9KZfxT654Y","Runna","0:26"),
+  goodmorning:V("61zbhuRiwQg","Horton Barbell","0:54"),
+  lunge:V("mAgbXQdd4LM","PureGym","0:15"),
+  scappu:V("m1x3Q4ALX3o","Rod J Cooper","0:54"),
+};
 const WARM_HEAVY = [
-  ["5 min bike","Easy, light sweat"],
-  ["Hip openers + bodyweight squats","World's greatest stretch 3/side, then 10 squats"],
-  ["Band pull-aparts + scap pull-ups","15 + 8"],
-  ["Ramp-up sets: squat, then bench","Empty bar × 10, ~50% × 5, ~70% × 3"],
+  ["Bike","5 min, easy"],
+  ["World's greatest stretch","3 per side",WV.wgs],
+  ["Bodyweight squats","10 reps",WV.squat],
+  ["Band pull-aparts","15 reps",WV.pullapart],
+  ["Ramp-up sets","Squat + bench: bar × 10, 50% × 5, 70% × 3"],
 ];
 const COOL_HEAVY = [
   ["Hip-flexor stretch","45s per side"],
   ["Doorway chest stretch","30s per side"],
   ["Dead hang or lat stretch","30s"],
-  ["Child's pose, slow breathing","1 min"],
+  ["Child's pose","1 min, slow breathing"],
 ];
 const WARM_VOLUME = [
-  ["5 min rower","Easy, light sweat"],
-  ["Glute bridges + good-mornings, no weight","12 + 10"],
-  ["Band pull-aparts + arm circles","15 + 10"],
-  ["Ramp-up sets: RDL and incline press","2 light sets of 8"],
+  ["Rower","5 min, easy"],
+  ["Glute bridges","12 reps",WV.bridge],
+  ["Bodyweight good mornings","10 reps",WV.goodmorning],
+  ["Band pull-aparts","15 reps",WV.pullapart],
+  ["Ramp-up sets","RDL and incline press: 2 light sets of 8"],
 ];
 const COOL_VOLUME = [
   ["Seated hamstring stretch","45s"],
@@ -271,10 +289,11 @@ const COOL_VOLUME = [
   ["Cobra stretch for the abs","30s"],
 ];
 const WARM_ENDURANCE = [
-  ["5 min bike","Easy, light sweat"],
-  ["Walking lunges","10 per leg"],
-  ["Scap push-ups + band pull-aparts","10 + 15"],
-  ["Ramp-up set: split squat","1 light set of 8 per leg"],
+  ["Bike","5 min, easy"],
+  ["Walking lunges","10 per leg",WV.lunge],
+  ["Scap push-ups","10 reps",WV.scappu],
+  ["Band pull-aparts","15 reps",WV.pullapart],
+  ["Ramp-up set","Split squat: 1 light set of 8 per leg"],
 ];
 const COOL_ENDURANCE = [
   ["Couch stretch for quads and hip flexors","45s per side"],
@@ -289,7 +308,7 @@ const DAYS = [
   {d:"Wed",menu:"t2",title:"Volume day",sub:"Full body · muscle",plate:"blue",ex:["rdl","incline","pulldown","pushdown","crunch"],warm:WARM_VOLUME,cool:COOL_VOLUME,mins:50},
   {d:"Thu",menu:"r2",title:"Rest",sub:"Walk 8–10k steps",plate:"grey",rest:true},
   {d:"Fri",menu:"t3",title:"Endurance day",sub:"Full body · short rests",plate:"yellow",ex:["bss","pushup","pullmax","ohp","farmer"],warm:WARM_ENDURANCE,cool:COOL_ENDURANCE,mins:50},
-  {d:"Sat",menu:"r1",title:"Zone 2",sub:"Easy cardio",plate:"green",cardio:true,ex:["zone2"],warm:[["5 min easy spin","Build up slowly"]],cool:[["Calf stretch","30s per side"],["Hip-flexor stretch","45s per side"],["Hamstring stretch","45s"]],mins:50},
+  {d:"Sat",menu:"r1",title:"Zone 2",sub:"Easy cardio",plate:"green",cardio:true,ex:["zone2"],warm:[["Easy spin","5 min, build up slowly"]],cool:[["Calf stretch","30s per side"],["Hip-flexor stretch","45s per side"],["Hamstring stretch","45s"]],mins:50},
   {d:"Sun",menu:"r2",title:"Rest",sub:"Recover & grow",plate:"grey",rest:true},
 ];
 
@@ -382,8 +401,8 @@ function videoBtn(v,label){
     <span><span class="play">▶ ${esc(label||"Watch form video")}</span><small>${esc(v.channel)} · ${v.len}</small></span></button>`;
 }
 function stepsList(list,which,log){
-  return `<ul class="steps">${list.map((s,i)=>`<li><button class="check" type="button" data-step="${which}" data-i="${i}" aria-pressed="${!!log[which][i]}">
-    <span class="box"></span><span class="txt"><b>${esc(s[0])}</b><small>${esc(s[1])}</small></span></button></li>`).join("")}</ul>`;
+  return `<ul class="steps">${list.map((s,i)=>`<li><div class="row"><button class="check" type="button" data-step="${which}" data-i="${i}" aria-pressed="${!!log[which][i]}">
+    <span class="box"></span><span class="txt"><b>${esc(s[0])}</b><small>${esc(s[1])}</small></span></button>${s[2]?`<button class="vplay" type="button" data-vid="${s[2].id}" aria-label="Watch ${esc(s[0])} demo (${s[2].len})">▶</button>`:""}</div><div class="slot"></div></li>`).join("")}</ul>`;
 }
 function counts(i){
   const d=DAYS[i], L=dayLog(i); let tot=0,done=0;
@@ -483,11 +502,14 @@ function nextSession(){
   return "";
 }
 function wireVideos(root){
-  root.querySelectorAll(".watch").forEach(b=>b.onclick=()=>{
-    const slot=b.nextElementSibling; const open=slot.innerHTML!=="";
+  root.querySelectorAll(".watch,.vplay").forEach(b=>b.onclick=()=>{
+    const slot=b.classList.contains("vplay")?b.closest("li").querySelector(".slot"):b.nextElementSibling;
+    const open=slot.innerHTML!=="";
     root.querySelectorAll(".slot").forEach(s=>s.innerHTML="");
+    root.querySelectorAll(".vplay").forEach(v=>v.setAttribute("aria-expanded","false"));
     if(open) return;
-    slot.innerHTML=`<div class="player"><iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.vid}?autoplay=1&rel=0&modestbranding=1&playsinline=1" title="Form video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>`;
+    if(b.classList.contains("vplay")) b.setAttribute("aria-expanded","true");
+    slot.innerHTML=`<div class="player"><iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.vid}?autoplay=1&rel=0&modestbranding=1&playsinline=1" title="Exercise video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>`;
   });
 }
 
