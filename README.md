@@ -37,7 +37,7 @@ Three training menus (Mon, Wed, Fri) and two rest-day menus that alternate (Tue 
 
 | | kcal | Protein | Carbs | Fat |
 |---|---|---|---|---|
-| Training day | ~2,350 | ~160 g | ~270 g | ~66 g |
+| Training day | ~2,360 | ~159 g | ~270 g | ~68 g |
 | Rest day | ~2,230 | ~158 g | ~215 g | ~79 g |
 
 Weigh yourself once a week and aim for about +0.25 kg/week. If you stall for 2–3 weeks, add ~150 kcal.
