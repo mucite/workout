@@ -30,14 +30,14 @@ Seven different daily menus, one for each weekday, built from foods sold at Rewe
 | Training days (Mon, Wed, Fri, Sat) | ~2,430–2,440 | 160–175 g |
 | Rest days (Tue, Thu, Sun) | ~2,100–2,190 | ~155 g |
 
-Training days add a 30 g whey shake after the workout. The weekly average is ~2,300 kcal and ~2.3 g protein per kg. Weigh in weekly and measure your waist at the navel. The goal is +0.1–0.25 kg a week with the waist flat or shrinking.
+All sessions start at **21:00**. On training days, dinner is at 19:00 (two hours before the session) and a 30 g whey shake follows the workout at ~22:05. No caffeine after 15:00, lights out by 23:30. The weekly average is ~2,300 kcal and ~2.3 g protein per kg. Weigh in weekly and measure your waist at the navel. The goal is +0.1–0.25 kg a week with the waist flat or shrinking.
 
 ## In the app
 
 - **Train:** time budget, session clock, warm-up/cool-down checklists with demo videos, and exercise cards (sets, rest timer, kg log, inline form video). No coaching text on the cards.
 - **Eat:** the day's menu with per-meal macros. Tick meals off as you eat them.
 - **Shop:** the weekly list, calculated from all seven menus, with German product names and where to buy.
-- **Notes:** your own notepad, saved on the phone, plus the plan guide: progression, belly fat and recomp, office habits, form cues, machine swaps and meal prep.
+- **Notes:** your own notepad, saved on the phone, plus the plan guide: training at 21:00, progression, belly fat and recomp, office habits, form cues, machine swaps and meal prep.
 
 ## Use it
 
