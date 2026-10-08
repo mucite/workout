@@ -258,20 +258,22 @@ const EX = {
   cablerow:{name:"Seated cable row",sets:4,reps:"8–10",rest:90,de:"Kabelrudern",video:V("vwHG9Jfu4sw","Max Euceda","2:00")},
   facepull:{name:"Face pulls",sets:3,reps:"12–15",rest:60,de:"Kabelzug + Seil",video:V("0Po47vvj9g4","PureGym","0:15")},
   pallof:{name:"Pallof press",sets:3,reps:"10 /side",rest:45,de:"Kabelzug",video:V("HXrLaqNIkTs","PureGym","0:11")},
-  farmer:{name:"Farmer's walk",sets:3,time:40,rest:60,de:"Schwere Kurzhanteln",video:V("NH7Xv-7NQNQ","Buff Dudes","1:30")},
+  curl:{name:"EZ-bar curl",sets:3,reps:"10–12",rest:60,de:"SZ-Stange",video:V("9_ijHhcwlkM","Max Euceda","1:36")},
 
-  rdl:{name:"Romanian deadlift",sets:4,reps:"8–10",rest:120,de:"Langhantel",video:V("3VXmecChYYM","Max Euceda","2:00")},
-  pulldown:{name:"Lat pulldown",sets:4,reps:"8–12",rest:90,de:"Latzug",video:V("43hWj8mfYGY","Max Euceda","2:00")},
-  incline:{name:"Incline dumbbell press",sets:4,reps:"8–12",rest:90,de:"Schrägbank + Kurzhanteln",video:V("IP4oeKh1Sd4","Max Euceda","2:00")},
+  rdl:{name:"Romanian deadlift",sets:4,reps:"8–10",rest:105,de:"Langhantel",video:V("3VXmecChYYM","Max Euceda","2:00")},
+  pulldown:{name:"Lat pulldown",sets:4,reps:"8–12",rest:75,de:"Latzug",video:V("43hWj8mfYGY","Max Euceda","2:00")},
+  incline:{name:"Incline dumbbell press",sets:3,reps:"8–12",rest:90,de:"Schrägbank + Kurzhanteln",video:V("IP4oeKh1Sd4","Max Euceda","2:00")},
   lunge:{name:"Walking lunges",sets:3,reps:"10 /leg",rest:90,de:"Kurzhanteln",video:V("mAgbXQdd4LM","PureGym","0:15")},
   backext:{name:"Back extension",sets:3,reps:"12–15",rest:60,bw:true,de:"Hyperextension-Bank",video:V("G6HG5VzJoNc","Alexandra Yaeger","1:15")},
+  pushdown:{name:"Rope triceps pushdown",sets:3,reps:"10–12",rest:60,de:"Kabelzug + Seil",video:V("-zLyUAo1gMw","Max Euceda","2:00")},
   kneeraise:{name:"Hanging knee raises",sets:3,reps:"10–15",rest:60,bw:true,de:"Klimmzugstange / Dip-Station",video:V("BGt7lMbUeRk","Coach Jazz","0:28")},
 
   legpress:{name:"Leg press",sets:4,reps:"10–12",rest:90,de:"Beinpresse",video:V("nDh_BlnLCGc","Jeff Nippard","0:59")},
   dbbench:{name:"Dumbbell bench press",sets:4,reps:"8–12",rest:90,de:"Flachbank + Kurzhanteln",video:V("AduT4Eq-iP0","PureGym","0:16")},
   dbrow:{name:"One-arm dumbbell row",sets:4,reps:"10 /side",rest:60,de:"Flachbank + Kurzhantel",video:V("dFzUjzfih7k","Max Euceda","2:00")},
-  ohp:{name:"Seated dumbbell press",sets:3,reps:"10–12",rest:75,de:"Bank, Lehne senkrecht",video:V("rO_iEImwHyo","Max Euceda","2:00")},
-  hipthrust:{name:"Hip thrust",sets:4,reps:"10–12",rest:90,de:"Langhantel + Bank / Glute-Maschine",video:V("aweBS7K71l8","PureGym","0:17")},
+  hipthrust:{name:"Hip thrust",sets:3,reps:"10–12",rest:90,de:"Langhantel + Bank / Glute-Maschine",video:V("aweBS7K71l8","PureGym","0:17")},
+  hammer:{name:"Hammer curl",sets:3,reps:"10–12",rest:45,de:"Kurzhanteln",video:V("BRVDS6HVR9Q","Buff Dudes","1:30")},
+  overhead:{name:"Overhead cable triceps extension",sets:3,reps:"10–12",rest:45,de:"Kabelzug + Seil",video:V("1u18yJELsh0","Renaissance Periodization","0:12")},
   plank:{name:"Plank",sets:3,time:45,rest:45,bw:true,de:"Matte",video:V("pSHjTRCQxIw","ScottHermanFitness","1:17")},
 
   rower:{name:"Rowing intervals",sets:8,time:30,rest:90,bw:true,de:"Rudergerät · 30 s hard, 90 s easy",video:V("4zWu1yuJ0_g","Concept2","1:54")},
@@ -300,18 +302,18 @@ const WV = {
   chintuck:V("7rnlAVhAK-8","AskDoctorJo","0:29"),
 };
 const DAYS = [
-  {d:"Mon",key:"A",title:"Strength A",sub:"Squat · bench · row · core",plate:"red",
-    ex:["squat","bench","cablerow","facepull","pallof","farmer"],
+  {d:"Mon",key:"A",title:"Strength A",sub:"Squat · bench · row · core · biceps",plate:"red",
+    ex:["squat","bench","cablerow","facepull","pallof","curl"],
     warm:[["Bike (Fahrradergometer)","5 min, easy"],["World's greatest stretch","3 per side",WV.wgs],["Bodyweight squats","10 reps",WV.squat],["Band pull-aparts","15 reps",WV.pullapart],["Ramp-up sets","Squat + bench: bar × 10, 50 % × 5, 70 % × 3"]],
     cool:[["Hip-flexor stretch","45 s per side",WV.hipflexor],["Doorway chest stretch","30 s per side",WV.chest],["Lat stretch","30 s per side",WV.lat],["Child's pose","1 min, slow breathing",WV.child]]},
   {d:"Tue",key:"Rest",title:"Rest day",plate:"grey",rest:true},
-  {d:"Wed",key:"B",title:"Strength B",sub:"Hinge · pull · incline · core",plate:"blue",
-    ex:["rdl","pulldown","incline","lunge","backext","kneeraise"],
+  {d:"Wed",key:"B",title:"Strength B",sub:"Hinge · pull · incline · triceps · core",plate:"blue",
+    ex:["rdl","pulldown","incline","lunge","backext","pushdown","kneeraise"],
     warm:[["Rower (Rudergerät)","5 min, easy"],["Glute bridges","12 reps",WV.bridge],["Bodyweight good mornings","10 reps",WV.goodmorning],["Cat-cow","8 slow reps",WV.catcow],["Ramp-up sets","RDL + incline press: 2 light sets of 8"]],
     cool:[["Seated hamstring stretch","45 s",WV.hamstring],["Figure-4 glute stretch","30 s per side",WV.fig4],["Doorway chest stretch","30 s per side",WV.chest],["Child's pose","1 min",WV.child]]},
   {d:"Thu",key:"Rest",title:"Rest day",plate:"grey",rest:true},
-  {d:"Fri",key:"C",title:"Strength C",sub:"Legs · chest · posture · core",plate:"yellow",
-    ex:["legpress","dbbench","dbrow","ohp","hipthrust","plank"],
+  {d:"Fri",key:"C",title:"Strength C",sub:"Legs · chest · posture · arms · core",plate:"yellow",
+    ex:["legpress","dbbench","dbrow","hipthrust","hammer","overhead","plank"],
     warm:[["Bike (Fahrradergometer)","5 min, easy"],["90/90 hip switches","8 per side",WV.hip9090],["Glute bridges","12 reps",WV.bridge],["Scap push-ups","10 reps",WV.scappu],["Ramp-up sets","Leg press + dumbbell bench: 2 light sets of 10"]],
     cool:[["Couch stretch","45 s per side",WV.couch],["Thoracic extension on a foam roller","1 min",WV.thoracic],["Doorway chest stretch","30 s per side",WV.chest],["Figure-4 glute stretch","30 s per side",WV.fig4]]},
   {d:"Sat",key:"Cardio",title:"Cardio & core",sub:"Intervals · incline walk · core",plate:"green",
@@ -452,18 +454,20 @@ const CUES = {
   cablerow:["Chest tall, pull elbows past your ribs, squeeze shoulder blades.","Seated row machine (Rudermaschine)"],
   facepull:["Rope at eye height, pull to your forehead, thumbs back.","Band pull-aparts or reverse fly machine (Butterfly reverse)"],
   pallof:["Stand side-on, press straight out, don't let the cable twist you.","Side plank 30 s per side"],
-  farmer:["Heaviest dumbbells you can hold tall. Short, quick steps.","Static dumbbell hold"],
+  curl:["Elbows pinned to your sides, no swinging, lower slowly.","Straight-bar or cable curl"],
   rdl:["Soft knees, hips back, bar close. Stop at the hamstring stretch.","Dumbbell RDL"],
   pulldown:["Chest up, elbows down to your sides, full stretch at the top.","Assisted pull-ups (Klimmzugmaschine)"],
   incline:["Bench at 30°. Deep stretch, press up and slightly in.","Incline chest press machine or Smith"],
   lunge:["Long step, back knee kisses the floor, stay upright.","Reverse lunges in place or Bulgarian split squat"],
   backext:["Hinge at the hips, squeeze glutes at the top. No over-arching.","Back extension machine (Rückenstrecker)"],
+  pushdown:["Elbows locked at your sides, squeeze at full lockout.","Straight-bar pushdown or dips"],
   kneeraise:["No swinging. Curl the pelvis up, lower slowly.","Captain's chair or reverse crunches on a bench"],
   legpress:["Feet shoulder width, low back stays on the pad, deep but controlled.","Hack squat or goblet squat"],
   dbbench:["Shoulder blades back, lower to chest level, press up.","Chest press machine (Brustpresse)"],
   dbrow:["Hand and knee on the bench, pull the elbow to your hip.","Single-arm cable row"],
-  ohp:["Back supported, lower to ear height, ribs down.","Shoulder press machine (Schulterpresse)"],
   hipthrust:["Upper back on the bench, chin tucked, full lockout with glutes.","Glute bridge machine or Smith hip thrust"],
+  hammer:["Thumbs up, elbows still, control the way down.","Rope hammer curl on the cable"],
+  overhead:["Face away from the cable, elbows by your ears, full stretch behind your head.","Overhead dumbbell extension"],
   plank:["Elbows under shoulders, squeeze glutes, ribs down. Breathe.","Dead bugs"],
   rower:["Legs, then body, then arms. Hard = about 8/10 effort.","Bike sprints on the Ergometer"],
   inclinewalk:["Don't hold the rails. You should be able to talk in short sentences.","Crosstrainer or Stairmaster, same time and effort"],
@@ -569,7 +573,7 @@ function exCard(id,n,L){
   const e=EX[id], done=L.sets[id]||[];
   const complete=done.filter(Boolean).length===e.sets;
   const long=e.time>=600;
-  const dose=long?`<b>${e.time/60} min</b>`:e.time?`<b>${e.sets} × ${e.time}s</b>`:`<b>${e.sets} × ${e.reps}</b>`;
+  const dose=long?`<b>${e.time/60} min</b>`:e.time?`<b>${e.sets} × ${e.time}s</b>`:`<b>${e.sets} × ${e.reps.replace(/ \/(leg|side)/,"")}</b>`;
   const sets=Array.from({length:e.sets},(_,i)=>`<button class="set" type="button" data-id="${id}" data-i="${i}" aria-pressed="${!!done[i]}">
     ${long?"Start":e.time?fmt(e.time):e.reps.replace(/ \/(leg|side)/,"")}<small>${long?"timer":`${e.time?"round":"set"} ${i+1}`}</small></button>`).join("");
   return `<article class="ex${complete?" complete":""}">

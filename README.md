@@ -7,15 +7,15 @@ One page, no build step, works offline on your phone. Progress is saved in your 
 
 ## The week
 
-Three full-body strength days plus one cardio day. Each session has **~45 min of work** (sets plus rest), with an 8-min warm-up and a 5-min cool-down on top, so about **58–59 min** in total. Every strength day trains legs, chest, back and core. Rows, face pulls, back extensions and hip-flexor work offset long hours at a desk.
+Three full-body strength days plus one cardio day. Each session has **~45 min of work** (sets plus rest), with an 8-min warm-up and a 5-min cool-down on top, so about **58–59 min** in total. Every strength day trains legs, chest, back and core, plus direct biceps and triceps work twice a week. Rows, face pulls, back extensions and hip-flexor work offset long hours at a desk.
 
 | Day | Session | Exercises |
 |-----|---------|-----------|
-| Mon | **Strength A** | Back squat · Bench press · Seated cable row · Face pulls · Pallof press · Farmer's walk |
+| Mon | **Strength A** | Back squat · Bench press · Seated cable row · Face pulls · Pallof press · EZ-bar curl |
 | Tue | Rest | Desk reset (5 min) + 8–10k steps |
-| Wed | **Strength B** | Romanian deadlift · Lat pulldown · Incline dumbbell press · Walking lunges · Back extension · Hanging knee raises |
+| Wed | **Strength B** | Romanian deadlift · Lat pulldown · Incline dumbbell press · Walking lunges · Back extension · Rope triceps pushdown · Hanging knee raises |
 | Thu | Rest | Desk reset + 8–10k steps |
-| Fri | **Strength C** | Leg press · Dumbbell bench press · One-arm dumbbell row · Seated dumbbell press · Hip thrust · Plank |
+| Fri | **Strength C** | Leg press · Dumbbell bench press · One-arm dumbbell row · Hip thrust · Hammer curl · Overhead cable triceps extension · Plank |
 | Sat | **Cardio & core** | Rowing intervals 8 × 30 s · Incline treadmill walk 25 min · Dead bugs |
 | Sun | Rest | Desk reset + recover |
 
