@@ -353,7 +353,7 @@ const FOOD = {
   feta:{n:"Bio feta",de:"Feta",cat:"dairy",m:[265,17,0.5,21]},
 
   oats:{n:"Bio rolled oats",de:"Haferflocken",cat:"grain",m:[370,13.5,58.7,7]},
-  rye:{n:"Bio wholegrain rye bread",one:"slice wholegrain rye bread",many:"slices wholegrain rye bread",de:"Vollkornbrot",cat:"grain",pc:50,m:[210,6.5,38,1.5]},
+  rye:{n:"Vollkornbrot",one:"slice Vollkornbrot",many:"slices Vollkornbrot",de:"Roggenvollkornbrot, sliced — bread aisle or bakery",cat:"grain",pc:50,m:[210,6.5,38,1.5]},
   rice:{n:"Basmati rice, dry",de:"Basmatireis",cat:"grain",m:[350,8,77,0.6]},
   pasta:{n:"Wholewheat pasta, dry",de:"Vollkornnudeln",cat:"grain",m:[345,13,64,2.5]},
   wrap:{n:"Wholewheat wraps",one:"wholewheat wrap",many:"wholewheat wraps",de:"Vollkorn-Wraps",cat:"grain",pc:62,m:[300,9,49,6]},
@@ -394,12 +394,12 @@ const MENUS = {
   mon:{type:"Training day",meals:[
     {t:"07:30",tag:"Breakfast",n:"Oat & quark bowl",items:[["oats",70],["milk",200],["quark",200],["berries",125],["walnuts",20]]},
     {t:"12:30",tag:"Lunch",n:"Chicken, rice & broccoli",items:[["chicken",160],["rice",100],["broccoli",200],["oil",10],"Lemon, salt, pepper"]},
-    {t:"16:00",tag:"Pre-workout",n:"Skyr, banana & rye",items:[["skyr",100],["banana",1],["rye",1]]},
+    {t:"16:00",tag:"Pre-workout",n:"Skyr, banana & Vollkornbrot",items:[["skyr",100],["banana",1],["rye",1]]},
     {t:"18:45",tag:"Post-workout",n:"Whey shake",items:[["whey",30],"300 ml water, shaken"]},
     {t:"20:00",tag:"Dinner",n:"Salmon, potatoes & green beans",items:[["salmon",130],["potato",400],["beans",200],["oil",5],"Dill, lemon"]},
   ]},
   tue:{type:"Rest day",meals:[
-    {t:"07:30",tag:"Breakfast",n:"Scrambled eggs on rye",items:[["egg",3],["rye",2],["tomato",150],["spinach",50],["oil",5]]},
+    {t:"07:30",tag:"Breakfast",n:"Scrambled eggs on Vollkornbrot",items:[["egg",3],["rye",2],["tomato",150],["spinach",50],["oil",5]]},
     {t:"12:30",tag:"Lunch",n:"Chili con carne",items:[["beefmince",125],["kidney",120],["passata",200],["pepper",150],["rice",60],"Onion, garlic, cumin, paprika"]},
     {t:"16:00",tag:"Snack",n:"Cottage cheese & apple",items:[["cottage",200],["apple",1],["almonds",15]]},
     {t:"19:30",tag:"Dinner",n:"Chicken tray bake with feta",items:[["chicken",150],["zucchini",200],["pepper",150],["potato",200],["feta",40],["oil",10],"Oregano, garlic"]},
@@ -407,12 +407,12 @@ const MENUS = {
   wed:{type:"Training day",meals:[
     {t:"07:30",tag:"Breakfast",n:"Overnight oats with apple",items:[["oats",80],["skyr",250],["milk",150],["apple",1],["almonds",15],"Cinnamon"]},
     {t:"12:30",tag:"Lunch",n:"Chicken wraps",items:[["wrap",2],["chicken",140],["yogurt",100],["leaves",40],["tomato",100],["cucumber",100],"Garlic, herbs for the yogurt dip"]},
-    {t:"16:00",tag:"Pre-workout",n:"Rye with peanut butter & banana",items:[["rye",1],["pb",15],["banana",1]]},
+    {t:"16:00",tag:"Pre-workout",n:"Vollkornbrot with peanut butter & banana",items:[["rye",1],["pb",15],["banana",1]]},
     {t:"18:45",tag:"Post-workout",n:"Whey shake",items:[["whey",30],"300 ml water, shaken"]},
     {t:"20:00",tag:"Dinner",n:"Rump steak, sweet potato & broccoli",items:[["rump",160],["sweetpot",350],["broccoli",200],["oil",10]]},
   ]},
   thu:{type:"Rest day",meals:[
-    {t:"07:30",tag:"Breakfast",n:"Rye with cottage cheese, egg & avocado",items:[["rye",2],["cottage",200],["egg",1],["avocado",50],["cucumber",100],"Chives, radishes"]},
+    {t:"07:30",tag:"Breakfast",n:"Vollkornbrot with cottage cheese, egg & avocado",items:[["rye",2],["cottage",200],["egg",1],["avocado",50],["cucumber",100],"Chives, radishes"]},
     {t:"12:30",tag:"Lunch",n:"Red lentil dal with eggs",items:[["lentils",80],["passata",150],["spinach",100],["egg",2],["yogurt",100],"Onion, garlic, ginger, curry powder"]},
     {t:"16:00",tag:"Snack",n:"Quark with berries & walnuts",items:[["quark",250],["berries",125],["walnuts",20]]},
     {t:"19:30",tag:"Dinner",n:"Salmon & vegetable rice pan",items:[["salmon",130],["rice",75],["zucchini",150],["carrot",150],["oil",5],"Soy sauce, ginger"]},
