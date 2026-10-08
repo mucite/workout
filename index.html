@@ -268,10 +268,11 @@ const EX = {
   pushdown:{name:"Rope triceps pushdown",sets:3,reps:"10–12",rest:60,de:"Kabelzug + Seil",video:V("-zLyUAo1gMw","Max Euceda","2:00")},
   kneeraise:{name:"Hanging knee raises",sets:3,reps:"10–15",rest:60,bw:true,de:"Klimmzugstange / Dip-Station",video:V("BGt7lMbUeRk","Coach Jazz","0:28")},
 
-  legpress:{name:"Leg press",sets:4,reps:"10–12",rest:90,de:"Beinpresse",video:V("nDh_BlnLCGc","Jeff Nippard","0:59")},
-  dbbench:{name:"Dumbbell bench press",sets:4,reps:"8–12",rest:90,de:"Flachbank + Kurzhanteln",video:V("AduT4Eq-iP0","PureGym","0:16")},
+  legpress:{name:"Leg press",sets:4,reps:"10–12",rest:75,de:"Beinpresse",video:V("nDh_BlnLCGc","Jeff Nippard","0:59")},
+  dbbench:{name:"Dumbbell bench press",sets:3,reps:"8–12",rest:90,de:"Flachbank + Kurzhanteln",video:V("AduT4Eq-iP0","PureGym","0:16")},
   dbrow:{name:"One-arm dumbbell row",sets:4,reps:"10 /side",rest:60,de:"Flachbank + Kurzhantel",video:V("dFzUjzfih7k","Max Euceda","2:00")},
-  hipthrust:{name:"Hip thrust",sets:3,reps:"10–12",rest:90,de:"Langhantel + Bank / Glute-Maschine",video:V("aweBS7K71l8","PureGym","0:17")},
+  ohp:{name:"Seated dumbbell shoulder press",sets:3,reps:"10–12",rest:60,de:"Bank, Lehne senkrecht + Kurzhanteln",video:V("rO_iEImwHyo","Max Euceda","2:00")},
+  hipthrust:{name:"Hip thrust",sets:3,reps:"10–12",rest:75,de:"Langhantel + Bank / Glute-Maschine",video:V("aweBS7K71l8","PureGym","0:17")},
   hammer:{name:"Hammer curl",sets:3,reps:"10–12",rest:45,de:"Kurzhanteln",video:V("BRVDS6HVR9Q","Buff Dudes","1:30")},
   overhead:{name:"Overhead cable triceps extension",sets:3,reps:"10–12",rest:45,de:"Kabelzug + Seil",video:V("1u18yJELsh0","Renaissance Periodization","0:12")},
   plank:{name:"Plank",sets:3,time:45,rest:45,bw:true,de:"Matte",video:V("pSHjTRCQxIw","ScottHermanFitness","1:17")},
@@ -312,8 +313,8 @@ const DAYS = [
     warm:[["Rower (Rudergerät)","5 min, easy"],["Glute bridges","12 reps",WV.bridge],["Bodyweight good mornings","10 reps",WV.goodmorning],["Cat-cow","8 slow reps",WV.catcow],["Ramp-up sets","RDL + incline press: 2 light sets of 8"]],
     cool:[["Seated hamstring stretch","45 s",WV.hamstring],["Figure-4 glute stretch","30 s per side",WV.fig4],["Doorway chest stretch","30 s per side",WV.chest],["Child's pose","1 min",WV.child]]},
   {d:"Thu",key:"Rest",title:"Rest day",plate:"grey",rest:true},
-  {d:"Fri",key:"C",title:"Strength C",sub:"Legs · chest · posture · arms · core",plate:"yellow",
-    ex:["legpress","dbbench","dbrow","hipthrust","hammer","overhead","plank"],
+  {d:"Fri",key:"C",title:"Strength C",sub:"Legs · chest · shoulders · arms · core",plate:"yellow",
+    ex:["legpress","dbbench","dbrow","ohp","hipthrust","hammer","overhead","plank"],
     warm:[["Bike (Fahrradergometer)","5 min, easy"],["90/90 hip switches","8 per side",WV.hip9090],["Glute bridges","12 reps",WV.bridge],["Scap push-ups","10 reps",WV.scappu],["Ramp-up sets","Leg press + dumbbell bench: 2 light sets of 10"]],
     cool:[["Couch stretch","45 s per side",WV.couch],["Thoracic extension on a foam roller","1 min",WV.thoracic],["Doorway chest stretch","30 s per side",WV.chest],["Figure-4 glute stretch","30 s per side",WV.fig4]]},
   {d:"Sat",key:"Cardio",title:"Cardio & core",sub:"Intervals · incline walk · core",plate:"green",
@@ -385,6 +386,7 @@ const FOOD = {
   almonds:{n:"Almonds",de:"Mandeln",cat:"pantry",m:[605,24,5.7,54]},
   pb:{n:"Peanut butter, 100% peanuts",de:"Erdnussmus",cat:"pantry",m:[610,25,13,50]},
   oil:{n:"Olive oil",de:"Olivenöl nativ extra",cat:"pantry",ml:1,m:[884,0,0,100]},
+  whey:{n:"Whey protein",de:"Whey-Protein (already bought)",cat:"pantry",m:[380,78,6,6]},
   linseedoil:{n:"Linseed oil",de:"Leinöl",cat:"pantry",ml:1,m:[884,0,0,100]},
 };
 /* One menu per day. Items: [food, grams|ml|pieces] or a plain string (herbs, spices — no macros). */
@@ -392,7 +394,8 @@ const MENUS = {
   mon:{type:"Training day",meals:[
     {t:"07:30",tag:"Breakfast",n:"Oat & quark bowl",items:[["oats",70],["milk",200],["quark",200],["berries",125],["walnuts",20]]},
     {t:"12:30",tag:"Lunch",n:"Chicken, rice & broccoli",items:[["chicken",160],["rice",100],["broccoli",200],["oil",10],"Lemon, salt, pepper"]},
-    {t:"16:00",tag:"Pre-workout",n:"Skyr, banana & rye",items:[["skyr",250],["banana",1],["rye",1]]},
+    {t:"16:00",tag:"Pre-workout",n:"Skyr, banana & rye",items:[["skyr",100],["banana",1],["rye",1]]},
+    {t:"18:45",tag:"Post-workout",n:"Whey shake",items:[["whey",30],"300 ml water, shaken"]},
     {t:"20:00",tag:"Dinner",n:"Salmon, potatoes & green beans",items:[["salmon",130],["potato",400],["beans",200],["oil",5],"Dill, lemon"]},
   ]},
   tue:{type:"Rest day",meals:[
@@ -404,7 +407,8 @@ const MENUS = {
   wed:{type:"Training day",meals:[
     {t:"07:30",tag:"Breakfast",n:"Overnight oats with apple",items:[["oats",80],["skyr",250],["milk",150],["apple",1],["almonds",15],"Cinnamon"]},
     {t:"12:30",tag:"Lunch",n:"Chicken wraps",items:[["wrap",2],["chicken",140],["yogurt",100],["leaves",40],["tomato",100],["cucumber",100],"Garlic, herbs for the yogurt dip"]},
-    {t:"16:00",tag:"Pre-workout",n:"Rye with peanut butter, banana & skyr",items:[["rye",1],["pb",15],["banana",1],["skyr",150]]},
+    {t:"16:00",tag:"Pre-workout",n:"Rye with peanut butter & banana",items:[["rye",1],["pb",15],["banana",1]]},
+    {t:"18:45",tag:"Post-workout",n:"Whey shake",items:[["whey",30],"300 ml water, shaken"]},
     {t:"20:00",tag:"Dinner",n:"Rump steak, sweet potato & broccoli",items:[["rump",160],["sweetpot",350],["broccoli",200],["oil",10]]},
   ]},
   thu:{type:"Rest day",meals:[
@@ -416,11 +420,13 @@ const MENUS = {
   fri:{type:"Training day",meals:[
     {t:"07:30",tag:"Breakfast",n:"Mushroom & spinach omelette",items:[["egg",3],["mushroom",100],["spinach",80],["rye",2],["orange",1],["oil",5]]},
     {t:"12:30",tag:"Lunch",n:"Wholewheat pasta bolognese",items:[["pasta",90],["beefmince",150],["passata",250],["carrot",100],["zucchini",100],"Onion, garlic, basil"]},
-    {t:"16:00",tag:"Pre-workout",n:"Kefir, banana & oats",items:[["kefir",300],["banana",1],["oats",30]]},
-    {t:"20:00",tag:"Dinner",n:"Chicken, roast potatoes & carrots",items:[["chicken",180],["potato",400],["carrot",200],["oil",10],"Rosemary, paprika"]},
+    {t:"16:00",tag:"Pre-workout",n:"Kefir, banana & oats",items:[["kefir",200],["banana",1],["oats",30]]},
+    {t:"18:45",tag:"Post-workout",n:"Whey shake",items:[["whey",30],"300 ml water, shaken"]},
+    {t:"20:00",tag:"Dinner",n:"Chicken, roast potatoes & carrots",items:[["chicken",180],["potato",350],["carrot",200],["oil",10],"Rosemary, paprika"]},
   ]},
   sat:{type:"Cardio day",meals:[
-    {t:"08:00",tag:"Breakfast",n:"Banana porridge with skyr",items:[["oats",80],["milk",300],["skyr",150],["banana",1],["pb",10]]},
+    {t:"08:00",tag:"Breakfast",n:"Banana porridge with peanut butter",items:[["oats",80],["milk",300],["banana",1],["pb",10]]},
+    {t:"10:45",tag:"Post-workout",n:"Whey shake",items:[["whey",30],"300 ml water, shaken"]},
     {t:"12:30",tag:"Lunch",n:"Shakshuka with feta",items:[["egg",4],["passata",250],["pepper",150],["feta",30],["rye",2],"Onion, cumin, parsley"]},
     {t:"16:00",tag:"Snack",n:"Skyr with pear & walnuts",items:[["skyr",250],["pear",1],["walnuts",10]]},
     {t:"19:30",tag:"Dinner",n:"Salmon, sweet potato & spinach",items:[["salmon",150],["sweetpot",250],["spinach",150],["oil",5],"Garlic, lemon"]},
@@ -465,6 +471,7 @@ const CUES = {
   legpress:["Feet shoulder width, low back stays on the pad, deep but controlled.","Hack squat or goblet squat"],
   dbbench:["Shoulder blades back, lower to chest level, press up.","Chest press machine (Brustpresse)"],
   dbrow:["Hand and knee on the bench, pull the elbow to your hip.","Single-arm cable row"],
+  ohp:["Back supported, lower to ear height, ribs down, press straight up.","Shoulder press machine (Schulterpresse)"],
   hipthrust:["Upper back on the bench, chin tucked, full lockout with glutes.","Glute bridge machine or Smith hip thrust"],
   hammer:["Thumbs up, elbows still, control the way down.","Rope hammer curl on the cable"],
   overhead:["Face away from the cable, elbows by your ears, full stretch behind your head.","Overhead dumbbell extension"],
@@ -720,6 +727,7 @@ function qtyText(k,q){
   if(k==="oil") return "1 bottle";
   if(k==="linseedoil") return "1 small bottle";
   if(k==="rye") return `${q} slices · ~${Math.ceil(q*f.pc/750)} loaf`;
+  if(k==="whey") return `${q} g`;
   if(f.pc) return String(q);
   const r=Math.ceil(q/50)*50;
   return r>=1000?`${(Math.ceil(q/100)/10).toLocaleString(undefined,{minimumFractionDigits:1})} ${f.ml?"L":"kg"}`:`${r} ${f.ml?"ml":"g"}`;
@@ -759,7 +767,7 @@ function renderNotes(){
     </ul></div></details>
     <details><summary>Belly fat & recomposition</summary><div class="body"><ul>
       <li>You can't burn fat from one spot. Belly fat drops with <b>overall</b> fat loss: lifting, the cardio day, daily steps and the menus together.</li>
-      <li>The menus average <b>~2,300 kcal</b> and <b>~155 g protein</b> (≈2.2 g/kg): slightly above maintenance on training days, slightly below on rest days.</li>
+      <li>The menus average <b>~2,300 kcal</b> and <b>~160 g protein</b> (≈2.3 g/kg): slightly above maintenance on training days, slightly below on rest days.</li>
       <li>Weigh in weekly (same morning) and measure your <b>waist at the navel</b>. Goal: weight up ~0.1–0.25 kg/week, waist flat or shrinking.</li>
       <li>Waist growing? Drop ~150 kcal (less rice/potato). Weight and waist flat for 3 weeks? Add ~150 kcal.</li>
       <li>Sleep 7–9 h. Short sleep pushes fat to the belly and stalls muscle gain.</li>
@@ -777,6 +785,7 @@ function renderNotes(){
       <li>Shop twice: <b>Saturday</b> (Mon–Wed) and <b>Wednesday</b> (Thu–Sun) so fish and veg stay fresh.</li>
       <li>Fresh salmon keeps 1–2 days. Bio/ASC frozen fillets are fine: thaw overnight in the fridge.</li>
       <li>Batch-cook: Sunday chicken + rice for Monday lunch; Monday evening chili for Tuesday; Thursday dal portion.</li>
+      <li><b>Whey:</b> one 30 g scoop after every workout (Mon, Wed, Fri, Sat), in water. Not needed on rest days.</li>
       <li>Store Leinöl in the fridge and don't heat it.</li>
     </ul></div></details>
   </div></div>`;

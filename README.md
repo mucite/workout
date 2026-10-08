@@ -15,7 +15,7 @@ Three full-body strength days plus one cardio day. Each session has **~45 min of
 | Tue | Rest | Desk reset (5 min) + 8–10k steps |
 | Wed | **Strength B** | Romanian deadlift · Lat pulldown · Incline dumbbell press · Walking lunges · Back extension · Rope triceps pushdown · Hanging knee raises |
 | Thu | Rest | Desk reset + 8–10k steps |
-| Fri | **Strength C** | Leg press · Dumbbell bench press · One-arm dumbbell row · Hip thrust · Hammer curl · Overhead cable triceps extension · Plank |
+| Fri | **Strength C** | Leg press · Dumbbell bench press · One-arm dumbbell row · Seated dumbbell shoulder press · Hip thrust · Hammer curl · Overhead cable triceps extension · Plank |
 | Sat | **Cardio & core** | Rowing intervals 8 × 30 s · Incline treadmill walk 25 min · Dead bugs |
 | Sun | Rest | Desk reset + recover |
 
@@ -27,10 +27,10 @@ Seven different daily menus, one for each weekday, built from foods sold at Rewe
 
 | | kcal | Protein |
 |---|---|---|
-| Training days (Mon, Wed, Fri, Sat) | ~2,410–2,420 | 150–170 g |
+| Training days (Mon, Wed, Fri, Sat) | ~2,430–2,440 | 160–175 g |
 | Rest days (Tue, Thu, Sun) | ~2,100–2,190 | ~155 g |
 
-The weekly average is ~2,300 kcal and ~2.2 g protein per kg. Weigh in weekly and measure your waist at the navel. The goal is +0.1–0.25 kg a week with the waist flat or shrinking.
+Training days add a 30 g whey shake after the workout. The weekly average is ~2,300 kcal and ~2.3 g protein per kg. Weigh in weekly and measure your waist at the navel. The goal is +0.1–0.25 kg a week with the waist flat or shrinking.
 
 ## In the app
 
